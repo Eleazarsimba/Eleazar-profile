@@ -3,6 +3,10 @@ import $ from 'jquery';
 import { GrClose, GrMenu } from 'react-icons/gr'
 import Aboutme from "./Aboutme";
 import Skills from "./Pages/Skills";
+import Education from "./Pages/Education";
+import Experience from "./Pages/Experience";
+import Projects from "./Pages/Projects";
+import Contactme from "./Pages/Contactme";
 
 const Home = () => {
   const [navbarOpen, setNavbarOpen] = useState(true)
@@ -65,6 +69,10 @@ const Home = () => {
       <div className='profileBody'>
         <Aboutme />
         <Skills />
+        <Education />
+        <Experience />
+        <Projects />
+        <Contactme />
       </div>
     </div>
   )

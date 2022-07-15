@@ -3,7 +3,7 @@
   
 }
 .copyright{
-  bottom: 0;
+  bottom: 20px;
   position: absolute;
   left: 20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -58,20 +58,25 @@
   .hamburgerMenu{
     display: none;
   }
-  .aboutme, .skills{
+  .aboutme, .skills, .education, .experience, .projects, .contactme{
     padding: 40px;
     justify-content: center;
     height: 100vh;
+  }
+  .myexper{
+    background-color: #e4e4f6;
+    padding: 4px;
+    margin: 4px;
   }
   .typedText{
     color: #000000;
     font-weight: 500;
     font-size: 22px;
   }
-  .skills{
+  .skills, .education, .experience, .projects, .contactme{
     margin-top: 20px;
   }
-  .skills h3{
+  .skills, .education, .experience, .projects, .contactme h3{
     margin-bottom: 20px;
   }
   .collapsethis{
@@ -137,20 +142,25 @@
   .hamburgerMenu{
     display: none;
   }
-  .aboutme, .skills{
+  .aboutme, .skills, .education, .experience, .projects, .contactme{
     padding: 20px;
     justify-content: center;
     height: 100vh;
+  }
+  .myexper{
+    background-color: #e4e4f6;
+    padding: 4px;
+    margin: 4px;
   }
   .typedText{
     color: #000000;
     font-weight: 500;
     font-size: 22px;
   }
-  .skills{
+  .skills, .education, .experience, .projects, .contactme{
     margin-top: 20px;
   }
-  .skills h3{
+  .skills, .education, .experience, .projects, .contactme h3{
     margin-bottom: 20px;
   }
   .collapsethis{
@@ -223,10 +233,15 @@
     top: 0;
     left: 20px;
   }
-  .aboutme, .skills{
+  .aboutme, .skills, .education, .experience, .projects, .contactme{
     padding: 40px;
     justify-content: center;
     height: 100vh;
+  }
+  .myexper{
+    background-color: #e4e4f6;
+    padding: 4px;
+    margin: 4px;
   }
   .typedText{
     color: #000000;
@@ -236,10 +251,10 @@
   .extrainfo{
     display: none;
   }
-  .skills{
+  .skills, .education, .experience, .projects, .contactme{
     margin-top: 20px;
   }
-  .skills h3{
+  .skills, .education, .experience, .projects, .contactme h3{
     margin-bottom: 20px;
   }
   .collapsethis{
@@ -312,9 +327,14 @@
     top: 0;
     left: 20px;
   }
-  .aboutme, .skills{
+  .aboutme, .skills, .education, .experience, .projects, .contactme{
     padding: 40px;
     justify-content: center;
+  }
+  .myexper{
+    background-color: #e4e4f6;
+    padding: 4px;
+    margin: 4px;
   }
   .typedText{
     color: #000000;
@@ -330,10 +350,10 @@
   .carouselImg {
     min-height: 600px;
   }
-  .skills{
+  .skills, .education, .experience, .projects, .contactme{
     margin-top: 20px;
   }
-  .skills h3{
+  .skills, .education, .experience, .projects, .contactme h3{
     margin-bottom: 20px;
   }
   .collapsethis{
