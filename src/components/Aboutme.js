@@ -26,14 +26,9 @@ const Aboutme = () => {
   return (
     <div className='aboutme'>
     <Carousel>
-      <Carousel.Item >
+      <Carousel.Item className='carouselImg'>
           <img 
-             style={{
-              objectFit:'cover',
-              top: 0,
-              left: 0,
-              minHeight: '500px'
-            }}
+          className="d-block img-fluid"
             src="eleazar2.png"
             alt="First slide"
             />
@@ -45,16 +40,13 @@ const Aboutme = () => {
                 fontWeight: '500'
             }}>
                 <h3>WHO AM I ?</h3>
-                <p>Hi, i'm <b>Eleazar Simba</b> aged {age} years and comes from the lower Eastern Kenya. 
+                <p className='mystory'>Hi, i'm <b>Eleazar Simba</b> aged {age} years. 
                 I am a full stack web developer having a bachelor's degree in Computer Science
                 from Pwani University, Kenya. I have been in the technology industry for {tcode} years.</p>
-                <p>I have passion in the latest technologies and inventions in the field of computing. I am flexible and ready to learn.</p>
-                <p>I love playing chess online and with friends, swimming, and watching cartoons.</p>
-              <Typed style={{
-                color: 'black',
-                fontWeight: 500,
-                fontSize:'22px',
-              }}
+                <p className='extrainfo'>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
+                <p className='extrainfo'>I love playing chess online and with friends.</p>
+              <Typed 
+                className='typedText'
                 strings={[
                         "I'm a Full Stack Developer",
                         "I love software development",

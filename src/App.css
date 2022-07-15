@@ -55,6 +55,11 @@
     padding: 40px;
     justify-content: center;
   }
+  .typedText{
+    color: #000000;
+    font-weight: 500;
+    font-size: 22px;
+  }
 }
 /* for medium screen */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
@@ -107,6 +112,11 @@
   .aboutme{
     padding: 20px;
     justify-content: center;
+  }
+  .typedText{
+    color: #000000;
+    font-weight: 500;
+    font-size: 22px;
   }
 }
 /* for small screen */
@@ -169,6 +179,14 @@
     padding: 40px;
     justify-content: center;
   }
+  .typedText{
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .extrainfo{
+    display: none;
+  }
 }
 /* for extra small screen */
 @media only screen and (max-width: 500px) {
@@ -229,5 +247,19 @@
   .aboutme{
     padding: 40px;
     justify-content: center;
+  }
+  .typedText{
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .mystory{
+    font-size: 12px;
+  }
+  .extrainfo{
+    display: none;
+  }
+  .carouselImg {
+    min-height: 600px;
   }
 }
