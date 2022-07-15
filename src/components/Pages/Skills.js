@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { MDBCollapse, MDBRow } from 'mdb-react-ui-kit';
 
 const Skills = () => {
-  const [showShow1, setShowShow1] = useState(false);
+  const [showShow1, setShowShow1] = useState(true);
   const [showShow2, setShowShow2] = useState(false);
   const [showShow3, setShowShow3] = useState(false);
   const [showShow4, setShowShow4] = useState(false);
@@ -37,33 +37,53 @@ const Skills = () => {
         <MDBRow onClick={toggleShow1} className='collapsethis'>
           FRONTEND DEVELOPMENT
         </MDBRow>
-        <MDBCollapse show={showShow1}>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <MDBCollapse show={showShow1} className='showthis'>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+          </ul>
         </MDBCollapse>
 
         <MDBRow onClick={toggleShow2} className='collapsethis'>
           BACKEND DEVELOPMENT
         </MDBRow>
-        <MDBCollapse show={showShow2}>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <MDBCollapse show={showShow2} className='showthis'>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+          </ul>
         </MDBCollapse>
 
         <MDBRow onClick={toggleShow3} className='collapsethis'>
           MOBILE DEVELOPMENT
         </MDBRow>
-        <MDBCollapse show={showShow3}>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <MDBCollapse show={showShow3} className='showthis'>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+          </ul>
         </MDBCollapse>
 
         <MDBRow onClick={toggleShow4} className='collapsethis'>
           DATABASES
         </MDBRow>
-        <MDBCollapse show={showShow4}>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <MDBCollapse show={showShow4} className='showthis'>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+          </ul>
         </MDBCollapse>
     </div>
   )
