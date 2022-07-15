@@ -2,6 +2,13 @@
   display: flex;
   
 }
+.copyright{
+  bottom: 0;
+  position: absolute;
+  left: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+}
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
@@ -51,14 +58,25 @@
   .hamburgerMenu{
     display: none;
   }
-  .aboutme{
+  .aboutme, .skills{
     padding: 40px;
     justify-content: center;
+    height: 100vh;
   }
   .typedText{
     color: #000000;
     font-weight: 500;
     font-size: 22px;
+  }
+  .skills{
+    margin-top: 20px;
+  }
+  .collapsethis{
+    background-color: #cac9c9;
+    margin: 10px;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
   }
 }
 /* for medium screen */
@@ -109,14 +127,25 @@
   .hamburgerMenu{
     display: none;
   }
-  .aboutme{
+  .aboutme, .skills{
     padding: 20px;
     justify-content: center;
+    height: 100vh;
   }
   .typedText{
     color: #000000;
     font-weight: 500;
     font-size: 22px;
+  }
+  .skills{
+    margin-top: 20px;
+  }
+  .collapsethis{
+    background-color: #cac9c9;
+    margin: 10px;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
   }
 }
 /* for small screen */
@@ -175,9 +204,10 @@
     top: 0;
     left: 20px;
   }
-  .aboutme{
+  .aboutme, .skills{
     padding: 40px;
     justify-content: center;
+    height: 100vh;
   }
   .typedText{
     color: #000000;
@@ -186,6 +216,16 @@
   }
   .extrainfo{
     display: none;
+  }
+  .skills{
+    margin-top: 20px;
+  }
+  .collapsethis{
+    background-color: #cac9c9;
+    margin: 10px;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
   }
 }
 /* for extra small screen */
@@ -244,7 +284,7 @@
     top: 0;
     left: 20px;
   }
-  .aboutme{
+  .aboutme, .skills{
     padding: 40px;
     justify-content: center;
   }
@@ -261,5 +301,15 @@
   }
   .carouselImg {
     min-height: 600px;
+  }
+  .skills{
+    margin-top: 20px;
+  }
+  .collapsethis{
+    background-color: #cac9c9;
+    margin: 10px;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
   }
 }

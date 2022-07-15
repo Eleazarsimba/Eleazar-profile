@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import $ from 'jquery';
 import { GrClose, GrMenu } from 'react-icons/gr'
 import Aboutme from "./Aboutme";
+import Skills from "./Pages/Skills";
 
 const Home = () => {
   const [navbarOpen, setNavbarOpen] = useState(true)
@@ -56,13 +57,14 @@ const Home = () => {
         <div className='closeIcon' onClick={closeMenu}>
           {navbarOpen ? <GrClose size='23'/> : ""}
         </div>
+        <div className="copyright">&copy; 2022, Eleazar</div>
       </div>
       <div className='hamburgerMenu' onClick={openMenu}>
           {navbarClosed ? <GrMenu size='30'/> : ""}
       </div>
       <div className='profileBody'>
         <Aboutme />
-        <Aboutme />
+        <Skills />
       </div>
     </div>
   )
