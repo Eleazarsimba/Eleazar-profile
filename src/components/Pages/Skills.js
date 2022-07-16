@@ -44,6 +44,11 @@ const Skills = () => {
             <li>React JS</li>
             <li>JQuery</li>
             <li>Bootstrap</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
           </ul>
         </MDBCollapse>
 

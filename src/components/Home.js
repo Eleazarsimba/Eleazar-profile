@@ -3,7 +3,6 @@ import $ from 'jquery';
 import { GrClose, GrMenu } from 'react-icons/gr'
 import Aboutme from "./Aboutme";
 import Skills from "./Pages/Skills";
-import Education from "./Pages/Education";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contactme from "./Pages/Contactme";
@@ -53,7 +52,6 @@ const Home = () => {
         <ul>
           <li>ABOUT</li>
           <li>SKILLS</li>
-          <li>EDUCATION</li>
           <li>EXPERIENCE</li>
           <li>PROJECTS</li>
           <li>CONTACT</li>
@@ -69,7 +67,6 @@ const Home = () => {
       <div className='profileBody'>
         <Aboutme />
         <Skills />
-        <Education />
         <Experience />
         <Projects />
         <Contactme />
