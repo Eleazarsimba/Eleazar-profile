@@ -9,19 +9,23 @@ https://nodejs.org/en/download/ if not already installed <br />
 ```
 mkdir folder-name
 ```
-3. Clone the project
-```
-git clone https://github.com/Eleazarsimba/Eleazar-profile
-```
-4. Open the program folder <br />
+3. Navigate to the new folde
 ```
 cd folder-name
 ```
-5. install the dependencies <br />
+4. Clone the project
+```
+git clone https://github.com/Eleazarsimba/Eleazar-profile
+```
+5. Open the program folder <br />
+```
+cd folder-name
+```
+6. install the dependencies <br />
 ```
 npm install 
 ```
-6. run the program <br />
+7. run the program <br />
 ```
 npm start
 ```
