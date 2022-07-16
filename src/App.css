@@ -92,13 +92,16 @@
     padding: 10px;
     height: 100px;
   }
-  .telephone, .whatsapp{
+  .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
     border: 1px solid black;
     padding: 15px;
     background-color: #cac9c9;
     margin: 5px;
     width: 60%;
+  }
+  #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
+    background-color: #a096cb;
   }
   .teldata{
     color: #ffffff;
@@ -189,12 +192,15 @@
     padding: 10px;
     height: 100px;
   }
-  .telephone, .whatsapp{
+  .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
     border: 1px solid black;
     padding: 15px;
-    background-color: #cac9c9;
+    background-color: #b6c1c6;
     margin: 5px;
+  }
+  #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
+    background-color: #a096cb;
   }
   .teldata{
     color: #ffffff;
@@ -296,12 +302,15 @@
     padding: 10px;
     height: 100px;
   }
-  .telephone, .whatsapp{
+  .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
     border: 1px solid black;
     padding: 15px;
     background-color: #cac9c9;
     margin: 5px;
+  }
+  #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
+    background-color: #a096cb;
   }
   .teldata{
     color: #ffffff;
@@ -408,12 +417,15 @@
     padding: 10px;
     height: 100px;
   }
-  .telephone, .whatsapp{
+  .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
     border: 1px solid black;
     padding: 15px;
     background-color: #cac9c9;
     margin: 5px;
+  }
+  #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
+    background-color: #a096cb;
   }
   .teldata{
     color: #ffffff;

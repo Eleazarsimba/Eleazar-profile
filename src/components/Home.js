@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-scroll";
 import $ from 'jquery';
 import { GrClose, GrMenu } from 'react-icons/gr'
 import Aboutme from "./Aboutme";
@@ -49,12 +50,39 @@ const Home = () => {
         <img src="profilep.jpg" alt="Add profile" width="130px" height="130px"/>
         <h3>Eleazar Simba</h3>
         <p>System Developer in KENYA</p>
-        <ul>
+        {/* <ul>
           <li>ABOUT</li>
           <li>SKILLS</li>
           <li>EXPERIENCE</li>
           <li>PROJECTS</li>
           <li>CONTACT</li>
+        </ul> */}
+        <ul>
+          <li>
+              <Link activeClass="active" smooth spy to="aboutme">
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="skills">
+                SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="experience">
+                EXPERIENCE
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="projects">
+                PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="contactme">
+                CONTACT
+              </Link>
+            </li>
         </ul>
         <div className='closeIcon' onClick={closeMenu}>
           {navbarOpen ? <GrClose size='23'/> : ""}
@@ -65,11 +93,21 @@ const Home = () => {
           {navbarClosed ? <GrMenu size='30'/> : ""}
       </div>
       <div className='profileBody'>
-        <Aboutme />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contactme />
+        <div id="aboutme">
+          <Aboutme />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contactme">
+          <Contactme />
+        </div>
       </div>
     </div>
   )
