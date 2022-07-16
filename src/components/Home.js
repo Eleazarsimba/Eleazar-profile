@@ -50,13 +50,6 @@ const Home = () => {
         <img src="profilep.jpg" alt="Add profile" width="130px" height="130px"/>
         <h3>Eleazar Simba</h3>
         <p>System Developer in KENYA</p>
-        {/* <ul>
-          <li>ABOUT</li>
-          <li>SKILLS</li>
-          <li>EXPERIENCE</li>
-          <li>PROJECTS</li>
-          <li>CONTACT</li>
-        </ul> */}
         <ul>
           <li>
               <Link activeClass="active" smooth spy to="aboutme">
