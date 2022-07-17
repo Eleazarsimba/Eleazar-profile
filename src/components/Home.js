@@ -2,11 +2,15 @@ import React, { useState } from "react"
 import { Link } from "react-scroll";
 import $ from 'jquery';
 import { GrClose, GrMenu } from 'react-icons/gr'
+import { BsDownload } from 'react-icons/bs'
 import Aboutme from "./Aboutme";
 import Skills from "./Pages/Skills";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contactme from "./Pages/Contactme";
+
+import { storage } from "../firebase-config"
+import { ref, getDownloadURL } from "firebase/storage";
 
 const Home = () => {
   const [navbarOpen, setNavbarOpen] = useState(true)
@@ -43,7 +47,19 @@ const Home = () => {
       $('.profileMenu').css({'display': 'block'});
       $('.profileBody').css({'left': '50%', 'position': 'relative', 'margin-top': '20px', 'width': 'calc(100vw - 50%)'});
     }
-  } 
+  }
+
+  getDownloadURL(ref(storage, 'CVs/EleazarCV.pdf'))
+  .then((url) => {
+    console.log(url)
+    const _link = document.getElementById('_cv');
+    _link.setAttribute('href', url);
+  })
+  .catch((error) => {
+    console.log(error)
+  });
+  // console.log(pathReference)
+
   return (
     <div className='appBody'>
       <div className='profileMenu'>
@@ -79,6 +95,15 @@ const Home = () => {
         </ul>
         <div className='closeIcon' onClick={closeMenu}>
           {navbarOpen ? <GrClose size='23'/> : ""}
+        </div>
+        <div className="downloadcv">
+          <a
+            href="/#"
+            id="_cv"
+            download
+          >
+            DOWNLOAD CV <BsDownload />
+          </a>
         </div>
         <div className="copyright">&copy; 2022, Eleazar</div>
       </div>

@@ -9,6 +9,22 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 100;
 }
+.downloadcv{
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  width: 150px;
+  cursor: pointer;
+}
+.downloadcv a{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: #000000;
+}
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
