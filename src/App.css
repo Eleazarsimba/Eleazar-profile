@@ -122,7 +122,7 @@
     width: 60%;
   }
   #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
-    background-color: #a096cb;
+    background-color: #909091;
   }
   .teldata{
     color: #ffffff;
@@ -226,7 +226,7 @@
     margin: 5px;
   }
   #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
-    background-color: #a096cb;
+    background-color: #909091;
   }
   .teldata{
     color: #ffffff;
@@ -341,7 +341,7 @@
     margin: 5px;
   }
   #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
-    background-color: #a096cb;
+    background-color: #909091;
   }
   .teldata{
     color: #ffffff;
@@ -461,7 +461,7 @@
     margin: 5px;
   }
   #telephone :hover, #whatsapp :hover, #mail :hover, #linkin :hover, #github :hover{
-    background-color: #a096cb;
+    background-color: #909091;
   }
   .teldata{
     color: #ffffff;

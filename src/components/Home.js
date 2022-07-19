@@ -58,7 +58,6 @@ const Home = () => {
   .catch((error) => {
     console.log(error)
   });
-  // console.log(pathReference)
 
   return (
     <div className='appBody'>
@@ -98,7 +97,7 @@ const Home = () => {
         </div>
         <div className="downloadcv">
           <a
-            href="/#"
+            href="EleazarCV.pdf"
             id="_cv"
             download
           >
