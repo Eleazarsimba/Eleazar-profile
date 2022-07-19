@@ -25,6 +25,21 @@
   text-decoration: none;
   color: #000000;
 }
+.imagerow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.imagecolumn img{
+  margin: 5px;
+}
+.viewgithub{
+  display: flex;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: #cac9c9;
+  margin: 0;
+}
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
@@ -130,6 +145,12 @@
     font-weight: 600;
     font-size: 18px;
   }
+  /* Create four equal columns that sits next to each other */
+  .imagecolumn {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
 }
 /* for medium screen */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
@@ -233,6 +254,11 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
+  }
+  .imagecolumn {
+    float: left;
+    width: 50%;
+    padding: 5px;
   }
 }
 /* for small screen */
@@ -348,6 +374,11 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
+  }
+  .imagecolumn {
+    float: left;
+    width: 100%;
+    padding: 5px;
   }
 }
 /* for extra small screen */
@@ -468,5 +499,10 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
+  }
+  .imagecolumn {
+    float: left;
+    width: 100%;
+    padding: 5px;
   }
 }

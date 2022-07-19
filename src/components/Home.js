@@ -5,7 +5,6 @@ import { GrClose, GrMenu } from 'react-icons/gr'
 import { BsDownload } from 'react-icons/bs'
 import Aboutme from "./Aboutme";
 import Skills from "./Pages/Skills";
-import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contactme from "./Pages/Contactme";
 
@@ -77,11 +76,6 @@ const Home = () => {
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="experience">
-                EXPERIENCE
-              </Link>
-            </li>
-            <li>
               <Link activeClass="active" smooth spy to="projects">
                 PROJECTS
               </Link>
@@ -115,9 +109,6 @@ const Home = () => {
         </div>
         <div id="skills">
           <Skills />
-        </div>
-        <div id="experience">
-          <Experience />
         </div>
         <div id="projects">
           <Projects />
