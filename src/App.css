@@ -40,6 +40,11 @@
   background-color: #cac9c9;
   margin: 0;
 }
+.right.carousel-control, 
+.left.carousel-control 
+{
+     visibility:hidden;
+}
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
@@ -151,6 +156,12 @@
     width: 25%;
     padding: 5px;
   }
+  #carouselcapt{
+    display: flex;
+  }
+  .carouselImg {
+    min-height: 900px;
+  }
 }
 /* for medium screen */
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
@@ -259,6 +270,12 @@
     float: left;
     width: 50%;
     padding: 5px;
+  }
+  #carouselcapt{
+    display: block;
+  }
+  .carouselImg {
+    min-height: 900px;
   }
 }
 /* for small screen */
@@ -379,6 +396,12 @@
     float: left;
     width: 100%;
     padding: 5px;
+  }
+  #carouselcapt{
+    display: block;
+  }
+  .carouselImg {
+    min-height: 600px;
   }
 }
 /* for extra small screen */
@@ -504,5 +527,8 @@
     float: left;
     width: 100%;
     padding: 5px;
+  }
+  #carouselcapt{
+    display: block;
   }
 }

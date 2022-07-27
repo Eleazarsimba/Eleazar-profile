@@ -16,11 +16,10 @@ const Aboutme = () => {
   
   return (
     <div className='aboutme'>
-    <Carousel>
+    <Carousel controls={false}>
       <Carousel.Item className='carouselImg'>
           <img 
-          className="d-block img-fluid"
-            src="eleazar2.png"
+            src="eleazar2.jpg"
             alt="First slide"
             />
             <Carousel.Caption 
@@ -31,7 +30,7 @@ const Aboutme = () => {
                 fontWeight: '500'
             }}>
                 <h3>WHO AM I ?</h3>
-                <p className='mystory'>Hi, i'm <b>Eleazar Simba</b> aged {age} years. 
+                <p className='mystory'>Hi, I'm <b>Eleazar Simba</b> aged {age} years. 
                 I am a full stack web developer having a bachelor's degree in Computer Science
                 from Pwani University, Kenya. </p>
                 <p className='extrainfo'>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
