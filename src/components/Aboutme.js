@@ -18,13 +18,9 @@ const Aboutme = () => {
     <div>
       <div className='carouselImg' 
         style={{ 
-          backgroundImage: "url(/eleazar2.jpg)", 
+          backgroundImage: "url(https://eleazarsimba.github.io/Eleazar-profile/eleazar2.jpg)", 
           backgroundRepeat: 'no-repeat' 
           }}>
-          {/* <img 
-            src="eleazar2.jpg"
-            alt="First slide"
-            /> */}
             <div 
               style={{
                 bottom: 'auto',
