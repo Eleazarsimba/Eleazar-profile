@@ -45,6 +45,7 @@
 {
      visibility:hidden;
 }
+
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
@@ -87,9 +88,6 @@
     left: 22%;
     position: relative;
     top: 0;
-  }
-  .closeIcon{
-    display: none;
   }
   .hamburgerMenu{
     display: none;
@@ -205,9 +203,6 @@
     position: relative;
     top: 0;
   }
-  .closeIcon{
-    display: none;
-  }
   .hamburgerMenu{
     display: none;
   }
@@ -290,6 +285,9 @@
     position: fixed;
     z-index: 1;
   }
+  .profileMenu.expanded {
+    display: block;
+  }
   .profileMenu ul li{
     list-style-type: none;
     padding: 8px;
@@ -321,21 +319,19 @@
     top: 0;
     position: relative;
   }
-  .closeIcon{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    margin-left: 200px;
+  .profileBody.expanded {
+    position: 'relative';
+    margin-top: '20px'; 
   }
   .hamburgerMenu{
     cursor: pointer;
-    display: block;
     top: 0;
-    left: 20px;
+    left: 2px;
+    z-index: 1;
+    position: fixed;
   }
   .aboutme, .skills, .experience, .projects, .contactme{
-    padding: 40px;
+    padding: 5px;
     justify-content: center;
     height: 100vh;
   }
@@ -348,9 +344,6 @@
     color: #000000;
     font-weight: 500;
     font-size: 20px;
-  }
-  .extrainfo{
-    display: none;
   }
   .skills, .experience, .projects, .contactme{
     margin-top: 20px;
@@ -416,6 +409,9 @@
     position: fixed;
     z-index: 1;
   }
+  .profileMenu.expanded {
+    display: block;
+  }
   .profileMenu ul li{
     list-style-type: none;
     padding: 8px;
@@ -447,21 +443,19 @@
     top: 0;
     position: relative;
   }
-  .closeIcon{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    margin-left: 200px;
+  .profileBody.expanded {
+    position: 'relative';
+    margin-top: '20px'; 
   }
   .hamburgerMenu{
     cursor: pointer;
-    display: block;
     top: 0;
-    left: 20px;
+    left: 2px;
+    z-index: 1;
+    position: fixed;
   }
   .aboutme, .skills, .experience, .projects, .contactme{
-    padding: 40px;
+    padding: 5px;
     justify-content: center;
   }
   .myexper{
@@ -476,9 +470,6 @@
   }
   .mystory{
     font-size: 12px;
-  }
-  .extrainfo{
-    display: none;
   }
   .carouselImg {
     min-height: 600px;

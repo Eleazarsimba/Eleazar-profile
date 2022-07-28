@@ -1,5 +1,4 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
 import Typed from "react-typed"
 
 const Aboutme = () => {
@@ -16,25 +15,31 @@ const Aboutme = () => {
   
   return (
     <div className='aboutme'>
-    <Carousel controls={false}>
-      <Carousel.Item className='carouselImg'>
-          <img 
+    <div>
+      <div className='carouselImg' 
+        style={{ 
+          backgroundImage: "url(/eleazar2.jpg)", 
+          backgroundRepeat: 'no-repeat' 
+          }}>
+          {/* <img 
             src="eleazar2.jpg"
             alt="First slide"
-            />
-            <Carousel.Caption 
+            /> */}
+            <div 
               style={{
-                top: '200px',
                 bottom: 'auto',
                 color: 'black',
-                fontWeight: '500'
+                fontWeight: '500',
+                textAlign: 'center',
+                verticalAlign: 'middle', 
+                padding: '10%'
             }}>
                 <h3>WHO AM I ?</h3>
                 <p className='mystory'>Hi, I'm <b>Eleazar Simba</b> aged {age} years. 
                 I am a full stack web developer having a bachelor's degree in Computer Science
                 from Pwani University, Kenya. </p>
-                <p className='extrainfo'>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
-                <p className='extrainfo'>I love playing chess online and with friends.</p>
+                <p>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
+                <p>I love playing chess online and with friends.</p>
               <Typed 
                 className='typedText'
                 strings={[
@@ -45,10 +50,10 @@ const Aboutme = () => {
                   backSpeed={20}
                   loop
                 />
-              </Carousel.Caption>
+              </div>
 
-      </Carousel.Item>
-    </Carousel>
+      </div>
+    </div>
     </div>
   )
 }
