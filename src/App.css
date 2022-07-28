@@ -131,6 +131,9 @@
   .showthis ul li{
     padding: 2px;
   }
+  .mystory{
+    font-size: 20px;
+  }
   .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
     border: 1px solid black;
@@ -244,6 +247,9 @@
   }
   .showthis ul li{
     padding: 2px;
+  }
+  .mystory{
+    font-size: 18px;
   }
   .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
@@ -368,6 +374,9 @@
   }
   .showthis ul li{
     padding: 2px;
+  }
+  .mystory{
+    font-size: 15px;
   }
   .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
