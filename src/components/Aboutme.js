@@ -24,8 +24,8 @@ const Aboutme = () => {
                 I am a full stack web developer having a bachelor's degree in Computer Science
                 from Pwani University, Kenya. I am enthusiastic about problem solving 
                 through the use of core computer science principles of time and space com.</p>
-                <p>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
-                <p>I love playing chess online and with friends.</p>
+                <p className='mystory'>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
+                <p className='mystory'>I love playing chess online and with friends.</p>
               <Typed 
                 className='typedText'
                 strings={[
