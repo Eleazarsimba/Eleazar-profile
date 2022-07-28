@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Eleazar-profile/static/css/main.f6de863b.css",
+    "main.js": "/Eleazar-profile/static/js/main.f707100e.js",
+    "static/js/787.c5d9485f.chunk.js": "/Eleazar-profile/static/js/787.c5d9485f.chunk.js",
+    "index.html": "/Eleazar-profile/index.html",
+    "main.f6de863b.css.map": "/Eleazar-profile/static/css/main.f6de863b.css.map",
+    "main.f707100e.js.map": "/Eleazar-profile/static/js/main.f707100e.js.map",
+    "787.c5d9485f.chunk.js.map": "/Eleazar-profile/static/js/787.c5d9485f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6de863b.css",
+    "static/js/main.f707100e.js"
+  ]
+}
