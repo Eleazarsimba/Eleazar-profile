@@ -7,21 +7,18 @@ import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
 import Contactme from "./Pages/Contactme";
 
-import { storage } from "../firebase-config"
-import { ref, getDownloadURL } from "firebase/storage";
-
 const Home = () => {
   const [isnavbarOpen, setNavbar] = useState(false)
 
-  getDownloadURL(ref(storage, 'CVs/EleazarCV.pdf'))
-  .then((url) => {
-    console.log(url)
-    const _link = document.getElementById('_cv');
-    _link.setAttribute('href', url);
-  })
-  .catch((error) => {
-    console.log(error)
-  });
+  // getDownloadURL(ref(storage, 'CVs/EleazarCV.pdf'))
+  // .then((url) => {
+  //   console.log(url)
+  //   const _link = document.getElementById('_cv');
+  //   _link.setAttribute('href', url);
+  // })
+  // .catch((error) => {
+  //   console.log(error)
+  // });
 
   return (
     <div className='appBody'>

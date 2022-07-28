@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { MDBCollapse, MDBRow } from 'mdb-react-ui-kit';
-import { db } from "../../firebase-config"
-import {collection, getDocs} from "firebase/firestore"
 
 const Skills = () => {
   const [showShow1, setShowShow1] = useState(false);
@@ -9,58 +7,6 @@ const Skills = () => {
   const [showShow3, setShowShow3] = useState(false);
   const [showShow4, setShowShow4] = useState(false);
   const [showShow5, setShowShow5] = useState(false);
-
-  const [myfrontskills, setfrontskill] = useState([]);
-  const [mybackskills, setbackskill] = useState([]);
-  const [mydbskills, setdbskill] = useState([]);
-  const [mymobskills, setmobskill] = useState([]);
-  const [mytools, settools] = useState([]);
-
-  const t_frontend = collection(db, "frontend");
-  const t_backend = collection(db, "backend");
-  const t_db = collection(db, "databases");
-  const t_mob = collection(db, "mobile");
-  const t_tool = collection(db, "developertools");
-
-  useEffect(() => {
-    const myFrontend = async () =>{
-        const data = await getDocs(t_frontend);
-        setfrontskill(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-    }
-    myFrontend();
-    }, [t_frontend])
-
-  useEffect(() => {
-    const myBackend = async () =>{
-        const data = await getDocs(t_backend);
-        setbackskill(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-    }
-    myBackend();
-    }, [t_backend])
-
-  useEffect(() => {
-    const myDbSkill = async () =>{
-        const data = await getDocs(t_db);
-        setdbskill(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-    }
-    myDbSkill();
-    }, [t_db])
-
-  useEffect(() => {
-    const myMob = async () =>{
-        const data = await getDocs(t_mob);
-        setmobskill(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-    }
-    myMob();
-    }, [t_mob])
-
-  useEffect(() => {
-    const myTools = async () =>{
-        const data = await getDocs(t_tool);
-        settools(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-    }
-    myTools();
-    }, [t_tool])
 
   const toggleShow1 = () => {
     setShowShow1(!showShow1);
@@ -105,13 +51,10 @@ const Skills = () => {
         </MDBRow>
         <MDBCollapse show={showShow1} className='showthis'>
           <ul>
-            {myfrontskills.map(myfrontskill => {   
-                return(
-                    <li key={myfrontskill.skill}>
-                        {myfrontskill.skill}
-                    </li>
-                );
-            })} 
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React JS</li>
+            <li>jQuery</li> 
           </ul>
         </MDBCollapse>
 
@@ -120,13 +63,9 @@ const Skills = () => {
         </MDBRow>
         <MDBCollapse show={showShow2} className='showthis'>
           <ul> 
-            {mybackskills.map(mybackskill => {   
-                return(
-                    <li key={mybackskill.skill}>
-                        {mybackskill.skill}
-                    </li>
-                );
-            })} 
+            <li>Node JS</li>
+            <li>Express JS</li>
+            <li>Knowledge of APIs</li> 
           </ul>
         </MDBCollapse>
 
@@ -135,13 +74,7 @@ const Skills = () => {
         </MDBRow>
         <MDBCollapse show={showShow3} className='showthis'>
           <ul> 
-            {mymobskills.map(mymobskill => {   
-                return(
-                    <li key={mymobskill.skill}>
-                        {mymobskill.skill}
-                    </li>
-                );
-            })} 
+            <li>React Native</li>
           </ul>
         </MDBCollapse>
 
@@ -150,13 +83,9 @@ const Skills = () => {
         </MDBRow>
         <MDBCollapse show={showShow4} className='showthis'>
           <ul> 
-            {mydbskills.map(mydbskill => {   
-                return(
-                    <li key={mydbskill.skill}>
-                        {mydbskill.skill}
-                    </li>
-                );
-            })} 
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
           </ul>
           
         </MDBCollapse>
@@ -165,13 +94,10 @@ const Skills = () => {
         </MDBRow>
         <MDBCollapse show={showShow5} className='showthis'>
           <ul>
-            {mytools.map(mytool => {   
-                return(
-                    <li key={mytool.tool}>
-                        {mytool.tool}
-                    </li>
-                );
-            })} 
+            <li>Github</li>
+            <li>Netbeans</li>
+            <li>Postman</li>
+            <li>VS Code</li>
           </ul>
         </MDBCollapse>
     </div>
