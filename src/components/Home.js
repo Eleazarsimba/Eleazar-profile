@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import { Link } from "react-scroll";
 import { GrClose, GrMenu } from 'react-icons/gr'
 import { BsDownload } from 'react-icons/bs'
-import Aboutme from "./Aboutme";
-import Skills from "./Pages/Skills";
-import Projects from "./Pages/Projects";
-import Contactme from "./Pages/Contactme";
+import Typed from "react-typed"
+import { MDBCollapse, MDBRow } from 'mdb-react-ui-kit';
+import { BsWhatsapp, BsTelephone, BsGithub, BsLinkedin } from 'react-icons/bs'
 
 const Home = () => {
   const [isnavbarOpen, setNavbar] = useState(false)
@@ -19,6 +18,49 @@ const Home = () => {
   // .catch((error) => {
   //   console.log(error)
   // });
+
+  //skills
+  const [showShow1, setShowShow1] = useState(true);
+  const [showShow2, setShowShow2] = useState(false);
+  const [showShow3, setShowShow3] = useState(false);
+  const [showShow4, setShowShow4] = useState(false);
+  const [showShow5, setShowShow5] = useState(false);
+
+  const toggleShow1 = () => {
+    setShowShow1(!showShow1);
+    setShowShow2(false);
+    setShowShow3(false);
+    setShowShow4(false);
+    setShowShow5(false);
+  }
+  const toggleShow2 = () => {
+    setShowShow2(!showShow2);
+    setShowShow1(false);
+    setShowShow3(false);
+    setShowShow4(false);
+    setShowShow5(false);
+  }
+  const toggleShow3 = () => {
+    setShowShow3(!showShow3);
+    setShowShow1(false);
+    setShowShow2(false);
+    setShowShow4(false);
+    setShowShow5(false);
+  }
+  const toggleShow4 = () => {
+    setShowShow4(!showShow4);
+    setShowShow1(false);
+    setShowShow2(false);
+    setShowShow3(false);
+    setShowShow5(false);
+  }
+  const toggleShow5 = () => {
+    setShowShow5(!showShow5);
+    setShowShow1(false);
+    setShowShow2(false);
+    setShowShow3(false);
+    setShowShow4(false);
+  }
 
   return (
     <div className='appBody'>
@@ -73,17 +115,218 @@ const Home = () => {
       <div className={
           isnavbarOpen ? "profileBody expanded" : "profileBody"
         }>
+
         <div id="aboutme">
-          <Aboutme />
+            <div className='aboutme'>
+              <div>
+                <div className='carouselImg' 
+                  style={{ 
+                    backgroundImage: "url(https://eleazarsimba.github.io/Eleazar-profile/eleazar2.jpg)", 
+                    backgroundRepeat: 'no-repeat' 
+                    }}>
+                      <div 
+                        style={{
+                          bottom: 'auto',
+                          color: 'black',
+                          fontWeight: '500',
+                          textAlign: 'center',
+                          verticalAlign: 'middle', 
+                          padding: '10%'
+                      }}>
+                          <h3>WHO AM I ?</h3>
+                          <p className='mystory'>Hi, I'm <b>Eleazar Simba</b>. 
+                          I am a Full Stack Web Developer having a Bachelor's degree in Computer Science
+                          from Pwani University, Kenya. I'm enthusiastic about problem solving 
+                          through the use of core computer science principles of time and space com.</p>
+                          <p className='mystory'>I have passion in the latest technologies, and inventions in the field of computing. I am flexible and ready to learn.</p>
+                          <p className='mystory'>I love playing chess online and with friends.</p>
+                        <Typed 
+                          className='typedText'
+                          strings={[
+                                  "I'm a Full Stack Developer",
+                                  "I love software development",
+                              ]}
+                            typeSpeed={110}
+                            backSpeed={20}
+                            loop
+                          />
+                        </div>
+
+                </div>
+              </div>
+              </div>
         </div>
+
         <div id="skills">
-          <Skills />
+            <div className='skills'>
+              <h3>SKILLS</h3>
+                <MDBRow onClick={toggleShow1} className='collapsethis'>
+                  FRONTEND DEVELOPMENT
+                </MDBRow>
+                <MDBCollapse show={showShow1} className='showthis'>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React JS</li>
+                    <li>jQuery</li> 
+                  </ul>
+                </MDBCollapse>
+
+                <MDBRow onClick={toggleShow2} className='collapsethis'>
+                  BACKEND DEVELOPMENT
+                </MDBRow>
+                <MDBCollapse show={showShow2} className='showthis'>
+                  <ul> 
+                    <li>Node JS</li>
+                    <li>Express JS</li>
+                    <li>Knowledge of APIs</li> 
+                  </ul>
+                </MDBCollapse>
+
+                <MDBRow onClick={toggleShow3} className='collapsethis'>
+                  MOBILE DEVELOPMENT
+                </MDBRow>
+                <MDBCollapse show={showShow3} className='showthis'>
+                  <ul> 
+                    <li>React Native</li>
+                  </ul>
+                </MDBCollapse>
+
+                <MDBRow onClick={toggleShow4} className='collapsethis'>
+                  DATABASES
+                </MDBRow>
+                <MDBCollapse show={showShow4} className='showthis'>
+                  <ul> 
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Firebase</li>
+                  </ul>
+                  
+                </MDBCollapse>
+                <MDBRow onClick={toggleShow5} className='collapsethis'>
+                  DEVELOPMENT TOOLS
+                </MDBRow>
+                <MDBCollapse show={showShow5} className='showthis'>
+                  <ul>
+                    <li>Github</li>
+                    <li>Netbeans</li>
+                    <li>Postman</li>
+                    <li>VS Code</li>
+                  </ul>
+                </MDBCollapse>
+            </div>
         </div>
+
         <div id="projects">
-          <Projects />
+            <div className='projects'>
+              <h3>PROJECTS</h3>
+              <div className="imagerow"> 
+                <div className="imagecolumn">
+                  <a href="https://creative-blini-ab1266.netlify.app/"> <img src="lexo-fire.png" alt='' width='100%' /></a>
+                  <p>This project is about management of employees, 
+                    adminstration and the sales of petroleum products at Lexo petrol station. 
+                    A database admin has to register an admin who can thereafter register other 
+                    admins and employees to the system. A default password is provided to 
+                    the registered system users which they therefore change.
+                  </p>
+                  <a href="https://github.com/Eleazarsimba/Lexo-react-with-firebase" style={{textDecoration:'none'}} id='github'>
+                    <div className='viewgithub'>
+                      <div>
+                        <BsGithub size='30' color='black' style={{marginRight: '30px'}}/>
+                      </div>
+                      <div className='teldata'>
+                        View code on Github
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                {/* end of first project */}
+              
+                <div className="imagecolumn">
+                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs"> <img src="swagger-doc.png" alt='' width='100%' /></a>
+                  <p>
+                    This is the swagger documentation for all the APIs used in the Lexo petrol station project 
+                    <a href="https://github.com/Eleazarsimba/Lexo-react-frontend"> Lexo frontend</a>
+                  </p>
+                  <p>
+                    The project when cloned runs on port 3002 and used a mySQL database that can be downloaded from the file attached in   
+                    <a href="https://github.com/Eleazarsimba/Lexo-react-backend"> Lexo backend</a>. Once downloaded it is imported.
+                  </p>
+                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs" style={{textDecoration:'none'}} id='github'>
+                    <div className='viewgithub'>
+                      <div>
+                        <BsGithub size='30' color='black' style={{marginRight: '30px'}}/>
+                      </div>
+                      <div className='teldata'>
+                        View code on Github
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
+
         <div id="contactme">
-          <Contactme />
+            <div className='contactme'>
+              <h3>CONTACT ME</h3>
+              {/* telephone */}
+              <a href="tel:0706083697" style={{textDecoration:'none'}} id='telephone'>
+                <div className='telephone'>
+                  <div>
+                    <BsTelephone size='30' color='green' style={{marginRight: '30px'}}/>
+                  </div>
+                  <div className='teldata'>
+                    Call me
+                  </div>
+                </div>
+              </a>
+              {/* whatsapp */}
+              <a href="https://wa.me/254706083697" style={{textDecoration:'none'}} id='whatsapp'>
+                <div className='whatsapp'>
+                  <div>
+                    <BsWhatsapp size='30' color='green' style={{marginRight: '30px'}}/>
+                  </div>
+                  <div className='teldata'>
+                    Chat me
+                  </div>
+                </div>
+              </a>
+              {/* Email*/}
+              <a href="mailto: eleazarsimba5@gmail.com" style={{textDecoration:'none'}} id='mail'>
+                <div className='mail'>
+                  <div>
+                    <img 
+                      src="email-logo.png" width='90px' height='32px'
+                      alt=""
+                      size='10'
+                    />
+                  </div>
+                </div>
+              </a>
+              {/* LinkedIn */}
+              <a href="https://www.linkedin.com/in/eleazar-simba-3bb331166/" style={{textDecoration:'none'}} id='linkin'>
+                <div className='linkin'>
+                  <div>
+                    <BsLinkedin size='30' color='blue' style={{marginRight: '30px'}}/>
+                  </div>
+                  <div className='teldata'>
+                    Visit
+                  </div>
+                </div>
+              </a>
+              {/* Github */}
+              <a href="https://github.com/Eleazarsimba" style={{textDecoration:'none'}} id='github'>
+                <div className='github'>
+                  <div>
+                    <BsGithub size='30' color='black' style={{marginRight: '30px'}}/>
+                  </div>
+                  <div className='teldata'>
+                    Visit
+                  </div>
+                </div>
+              </a>
+            </div>
         </div>
       </div>
     </div>
