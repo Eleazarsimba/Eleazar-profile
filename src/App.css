@@ -376,7 +376,7 @@
     padding: 2px;
   }
   .mystory{
-    font-size: 15px;
+    font-size: 18px;
   }
   .telephone, .whatsapp, .mail, .linkin, .github{
     display: flex;
@@ -478,7 +478,7 @@
     font-size: 15px;
   }
   .mystory{
-    font-size: 12px;
+    font-size: 16px;
   }
   .carouselImg {
     min-height: 600px;
