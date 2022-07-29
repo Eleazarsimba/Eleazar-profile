@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MDBCollapse, MDBRow } from 'mdb-react-ui-kit';
 
 const Skills = () => {
-  const [showShow1, setShowShow1] = useState(false);
+  const [showShow1, setShowShow1] = useState(true);
   const [showShow2, setShowShow2] = useState(false);
   const [showShow3, setShowShow3] = useState(false);
   const [showShow4, setShowShow4] = useState(false);
