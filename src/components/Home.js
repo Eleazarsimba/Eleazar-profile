@@ -222,7 +222,7 @@ const Home = () => {
               <h3>PROJECTS</h3>
               <div className="imagerow"> 
               <div className="imagecolumn">
-                  <a href="https://nimble-yeot-0421ef.netlify.app/"> <img src="phone-shop.png" alt='' width='100%' /></a>
+                  <a href="https://nimble-yeot-0421ef.netlify.app/"> <img src="phone-shop.PNG" alt='' width='100%' /></a>
                   <p>This project is about the selling of mobile phones which proceeds upto to payment with mpesa- 
                     though the paybill number used is only for safaricom daraja, 
                     So don't use it
