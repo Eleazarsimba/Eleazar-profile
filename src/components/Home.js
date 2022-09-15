@@ -221,8 +221,26 @@ const Home = () => {
             <div className='projects'>
               <h3>PROJECTS</h3>
               <div className="imagerow"> 
+              <div className="imagecolumn">
+                  <a href="https://nimble-yeot-0421ef.netlify.app/"> <img src="projects/phone-shop.png" alt='' width='100%' /></a>
+                  <p>This project is about the selling of mobile phones which proceeds upto to payment with mpesa- 
+                    though the paybill number used is only for safaricom daraja, 
+                    So don't use it
+                  </p>
+                  <a href="https://github.com/Eleazarsimba/Cart-with-React-redux" style={{textDecoration:'none'}} id='github'>
+                    <div className='viewgithub'>
+                      <div>
+                        <BsGithub size='30' color='black' style={{marginRight: '30px'}}/>
+                      </div>
+                      <div className='teldata'>
+                        View code on Github
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                {/* end of second project */}
                 <div className="imagecolumn">
-                  <a href="https://creative-blini-ab1266.netlify.app/"> <img src="lexo-fire.png" alt='' width='100%' /></a>
+                  <a href="https://creative-blini-ab1266.netlify.app/"> <img src="projects/lexo-fire.png" alt='' width='100%' /></a>
                   <p>This project is about management of employees, 
                     adminstration and the sales of petroleum products at Lexo petrol station. 
                     A database admin has to register an admin who can thereafter register other 
@@ -240,10 +258,10 @@ const Home = () => {
                     </div>
                   </a>
                 </div>
-                {/* end of first project */}
+                {/* end of second project */}
               
                 <div className="imagecolumn">
-                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs"> <img src="swagger-doc.png" alt='' width='100%' /></a>
+                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs"> <img src="projects/swagger-doc.png" alt='' width='100%' /></a>
                   <p>
                     This is the swagger documentation for all the APIs used in the Lexo petrol station project 
                     <a href="https://github.com/Eleazarsimba/Lexo-react-frontend"> Lexo frontend</a>
@@ -263,6 +281,7 @@ const Home = () => {
                     </div>
                   </a>
                 </div>
+                {/* end of third project */}
               </div>
             </div>
         </div>
