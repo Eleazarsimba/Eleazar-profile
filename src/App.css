@@ -45,7 +45,7 @@
 @media only screen and (min-width: 1000px) {
   .profileMenu{
     width: 22%;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: #f4f1f1;
     text-align: center;
     position: fixed;
