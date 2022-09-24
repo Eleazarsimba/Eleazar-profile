@@ -118,13 +118,7 @@ const Home = () => {
 
         <div id="aboutme">
             <div className='aboutme'>
-              <div>
-                <div className='carouselImg' 
-                  style={{ 
-                    backgroundImage: "url(https://eleazarsimba.github.io/Eleazar-profile/eleazar2.jpg)", 
-                    backgroundRepeat: 'no-repeat' 
-                    }}>
-                      <div 
+                  <div 
                         style={{
                           bottom: 'auto',
                           color: 'black',
@@ -150,10 +144,7 @@ const Home = () => {
                             backSpeed={20}
                             loop
                           />
-                        </div>
-
-                </div>
-              </div>
+                  </div>
               </div>
         </div>
 
@@ -221,12 +212,10 @@ const Home = () => {
             <div className='projects'>
               <h3>PROJECTS</h3>
               <div className="imagerow"> 
-              <div className="imagecolumn">
+              <div className="imagecolumn" style={{marginLeft: '10px'}}>
                   <a href="https://nimble-yeot-0421ef.netlify.app/"> <img src="assets/phone-shop.png" alt='' width='100%' /></a>
-                  <p>This project is about the selling of mobile phones which proceeds upto to payment with mpesa- 
-                    though the paybill number used is only for safaricom daraja, 
-                    So don't use it
-                  </p>
+                  <p>This project is about the selling of mobile phones which proceeds upto to payment with mpesa. Paybill number used is for safaricom daraja, 
+                  so Don't use it</p>
                   <a href="https://github.com/Eleazarsimba/Cart-with-React-redux" style={{textDecoration:'none'}} id='github'>
                     <div className='viewgithub'>
                       <div>
@@ -239,13 +228,11 @@ const Home = () => {
                   </a>
                 </div>
                 {/* end of second project */}
-                <div className="imagecolumn">
+                <div className="imagecolumn" style={{marginLeft: '10px'}}>
                   <a href="https://creative-blini-ab1266.netlify.app/"> <img src="assets/lexo-fire.png" alt='' width='100%' /></a>
-                  <p>This project is about management of employees, 
+                  <p>This project is about management of employees, offers, products, 
                     adminstration and the sales of petroleum products at Lexo petrol station. 
-                    A database admin has to register an admin who can thereafter register other 
-                    admins and employees to the system. A default password is provided to 
-                    the registered system users which they therefore change.
+                    Further guide in the repository.
                   </p>
                   <a href="https://github.com/Eleazarsimba/Lexo-react-with-firebase" style={{textDecoration:'none'}} id='github'>
                     <div className='viewgithub'>
@@ -260,17 +247,18 @@ const Home = () => {
                 </div>
                 {/* end of second project */}
               
-                <div className="imagecolumn">
-                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs"> <img src="assets/swagger-doc.png" alt='' width='100%' /></a>
+                <div className="imagecolumn" style={{marginLeft: '10px'}}>
+                  <div style={{display: 'flex'}}> 
+                    <img src="assets/ofisho.png" alt='' width='50%' />
+                    <img src="assets/ofisho1.png" alt='' width='50%' />
+                  </div>
                   <p>
-                    This is the swagger documentation for all the APIs used in the Lexo petrol station project 
-                    <a href="https://github.com/Eleazarsimba/Lexo-react-frontend"> Lexo frontend</a>
+                    To download the apk file for the android application click <a href="ofishoo-tips.apk" download>Here.</a><br/>
+                    Admin credentials: 
+                    email: admin@gmail.com, password: 
+                    admin12
                   </p>
-                  <p>
-                    The project when cloned runs on port 3002 and used a mySQL database that can be downloaded from the file attached in   
-                    <a href="https://github.com/Eleazarsimba/Lexo-react-backend"> Lexo backend</a>. Once downloaded it is imported.
-                  </p>
-                  <a href="https://github.com/Eleazarsimba/Swagger-documentation-for-my-APIs" style={{textDecoration:'none'}} id='github'>
+                  <a href="https://github.com/Eleazarsimba/betting_tips_react_native_app" style={{textDecoration:'none'}} id='github'>
                     <div className='viewgithub'>
                       <div>
                         <BsGithub size='30' color='black' style={{marginRight: '30px'}}/>
@@ -282,6 +270,7 @@ const Home = () => {
                   </a>
                 </div>
                 {/* end of third project */}
+                
               </div>
             </div>
         </div>
@@ -347,6 +336,7 @@ const Home = () => {
               </a>
             </div>
         </div>
+
       </div>
     </div>
   )

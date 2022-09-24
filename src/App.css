@@ -40,17 +40,12 @@
   background-color: #cac9c9;
   margin: 0;
 }
-.right.carousel-control, 
-.left.carousel-control 
-{
-     visibility:hidden;
-}
 
 /* for large screen */
 @media only screen and (min-width: 1000px) {
   .profileMenu{
     width: 22%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #f4f1f1;
     text-align: center;
     position: fixed;
@@ -95,7 +90,7 @@
   .aboutme, .skills, .experience, .projects, .contactme{
     padding: 40px;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .myexper{
     background-color: #e4e4f6;
@@ -154,14 +149,8 @@
   /* Create four equal columns that sits next to each other */
   .imagecolumn {
     float: left;
-    width: 25%;
-    padding: 5px;
-  }
-  #carouselcapt{
-    display: flex;
-  }
-  .carouselImg {
-    min-height: 900px;
+    width: 23%;
+    /* padding: 5px; */
   }
 }
 /* for medium screen */
@@ -212,7 +201,7 @@
   .aboutme, .skills, .experience, .projects, .contactme{
     padding: 20px;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .myexper{
     background-color: #e4e4f6;
@@ -269,14 +258,8 @@
   }
   .imagecolumn {
     float: left;
-    width: 50%;
+    width: 48%;
     padding: 5px;
-  }
-  #carouselcapt{
-    display: block;
-  }
-  .carouselImg {
-    min-height: 900px;
   }
 }
 /* for small screen */
@@ -339,7 +322,7 @@
   .aboutme, .skills, .experience, .projects, .contactme{
     padding: 5px;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .myexper{
     background-color: #e4e4f6;
@@ -398,12 +381,6 @@
     float: left;
     width: 100%;
     padding: 5px;
-  }
-  #carouselcapt{
-    display: block;
-  }
-  .carouselImg {
-    min-height: 600px;
   }
 }
 /* for extra small screen */
@@ -480,9 +457,6 @@
   .mystory{
     font-size: 16px;
   }
-  .carouselImg {
-    min-height: 600px;
-  }
   .skills, .experience, .projects, .contactme{
     margin-top: 20px;
   }
@@ -527,8 +501,5 @@
     float: left;
     width: 100%;
     padding: 5px;
-  }
-  #carouselcapt{
-    display: block;
   }
 }
